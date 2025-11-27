@@ -1,0 +1,20 @@
+public class BuggyRecursion {
+    public static void main(String[] args) {
+        countdown(5);
+
+    }
+
+    public static int countdown(int n) {
+        System.out.println(n);
+        countdown(n - 1);
+
+        if (n == 0) {
+            System.out.println("Base case has been reached");
+            return n;
+
+
+        }
+        return n;
+    }
+
+}
